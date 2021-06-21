@@ -19,7 +19,7 @@ class App extends Component {
   handleSubmit(event){
     event.preventDefault();
     this.setState({score:"'Processing Input'"})
-    const url = "http://127.0.0.1:8000/result/";
+    const url = "https://reactfakenewsdetector.herokuapp.com/result/";
     const bodyData = JSON.stringify({
        "input1":this.state.input1,
     });
