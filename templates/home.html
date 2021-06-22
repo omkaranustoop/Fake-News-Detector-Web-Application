@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+     <meta charset="utf-8">
+     <title></title>
+  </head>
+  <body>
+     This is my HomePage
+
+     <form action="{% url 'result' %}">
+
+     {% csrf_token %}
+
+     Enter your Article: <input type="text" required name="Enter your Article"> <br><br>
+
+  <input type="submit" name="" value="submit">
+     </form>
+  </body>
+</html>
